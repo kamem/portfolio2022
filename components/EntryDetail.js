@@ -1,10 +1,11 @@
 import styled from "styled-components"
 
-const EntryContainer = styled.section`
-  margin: 16px;
+const EntryContainer = styled.article`
+  margin: 16px auto;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 3px rgba(255,255,255,0.2);
   border-radius: 8px;
+  max-width: 1000px;
 `
 
 const EntryTitle = styled.h2`
@@ -16,7 +17,10 @@ const EntryTitle = styled.h2`
 
 const EntryImg = styled.figure`
   & img {
+    display: block;
+    margin: 0 auto;
     width: 100%;
+    max-width: 800px;
   }
 `
 
@@ -27,7 +31,9 @@ const EntryBody = styled.div`
     color: #fff;
   }
   & img {
+    margin: 0 auto;
     width: 100%;
+    max-width: 800px;
   }
   & h3 {
     padding: 16px;
